@@ -20,4 +20,9 @@ public class HelloWorldController {
   public String hello1(){
     return "hello-1";
   }
+
+  @GetMapping("/getUser")
+  public UserDetails getUsers(){
+    return new UserDetails("Manivel","Subramaniyan",32,"Karur");
+  }
 }
